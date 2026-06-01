@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato &amp; Agendamento - [NOME DO SALÃO]</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Serif:ital,wght@0,300;0,400;1,300&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#a47b65",
+                    "on-primary-fixed-variant": "#474747",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "outline": "#7e7576",
+                    "tertiary-fixed-dim": "#ecbda4",
+                    "on-background": "#1c1c1a",
+                    "on-surface-variant": "#4c4546",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#1b1b1b",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#848484",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#603f2d",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#2e1506",
+                    "on-surface": "#1c1c1a",
+                    "surface-tint": "#5e5e5e",
+                    "secondary-fixed": "#ffe088",
+                    "inverse-on-surface": "#f3f0ec",
+                    "surface-container": "#f0ede9",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-fixed-dim": "#e9c349",
+                    "surface-container-highest": "#e5e2de",
+                    "surface-container-high": "#eae8e4",
+                    "tertiary": "#000000",
+                    "on-secondary-container": "#745c00",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fcf9f5",
+                    "tertiary-fixed": "#ffdbca",
+                    "inverse-primary": "#c6c6c6",
+                    "surface-container-low": "#f6f3ef",
+                    "on-secondary-fixed": "#241a00",
+                    "primary": "#000000",
+                    "surface-variant": "#e5e2de",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed65b",
+                    "background": "#fcf9f5",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#31302e",
+                    "on-primary-fixed": "#1b1b1b",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fcf9f5",
+                    "outline-variant": "#cfc4c5",
+                    "surface-dim": "#dcdad6",
+                    "secondary": "#735c00",
+                    "tertiary-container": "#2e1506"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "32px",
+                    "container-max": "1280px",
+                    "section-padding": "120px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "stack-sm": "16px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Noto Serif"
+                    ],
+                    "label-sm": [
+                            "Manrope"
+                    ],
+                    "headline-md": [
+                            "Noto Serif"
+                    ],
+                    "headline-lg": [
+                            "Noto Serif"
+                    ],
+                    "body-lg": [
+                            "Manrope"
+                    ],
+                    "body-md": [
+                            "Manrope"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "300"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-surface-variant selection:text-on-background">
+<!-- TopNavBar Component -->
+<nav class="h-[72px] w-full sticky top-0 z-50 border-b border-stone-200/30 dark:border-stone-800/30 shadow-sm shadow-stone-200/10 dark:shadow-none bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-screen-2xl mx-auto px-8 md:px-12 w-full h-full">
+<div class="text-2xl font-serif font-bold tracking-tighter text-stone-950 dark:text-stone-50">
+                [NOME DO SALÃO]
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="font-serif text-xs tracking-[0.2em] uppercase font-medium text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Home</a>
+<a class="font-serif text-xs tracking-[0.2em] uppercase font-medium text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Serviços</a>
+<a class="font-serif text-xs tracking-[0.2em] uppercase font-medium text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Sobre Nós</a>
+<a class="font-serif text-xs tracking-[0.2em] uppercase font-medium text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Galeria</a>
+<a class="font-serif text-xs tracking-[0.2em] uppercase font-medium text-stone-950 dark:text-stone-50 border-b border-stone-950 dark:border-stone-50 pb-1 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Contato</a>
+</div>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-surface-tint transition-colors uppercase tracking-[0.2em]">
+                Agendar Agora
+            </button>
+</div>
+</nav>
+<!-- Page Header -->
+<header class="pt-section-padding pb-stack-md px-4 sm:px-8 max-w-container-max mx-auto text-center">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-stack-sm">Contato &amp; Agendamento</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Estamos aqui para responder suas dúvidas e ajudar a planejar seu momento de bem-estar. Entre em contato conosco ou agende seu horário online.</p>
+</header>
+<!-- Main Content Area -->
+<main class="max-w-container-max mx-auto px-4 sm:px-8 pb-section-padding grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+<!-- Left Column: Contact Info & Hours -->
+<div class="lg:col-span-4 space-y-12">
+<!-- Business Hours -->
+<div>
+<h3 class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant mb-6 border-b border-outline-variant pb-2">Horário de Funcionamento</h3>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface">
+<li class="flex justify-between items-center">
+<span>Segunda - Sexta</span>
+<span class="text-on-surface-variant">09:00 - 20:00</span>
+</li>
+<li class="flex justify-between items-center">
+<span>Sábado</span>
+<span class="text-on-surface-variant">09:00 - 18:00</span>
+</li>
+<li class="flex justify-between items-center">
+<span>Domingo</span>
+<span class="text-on-surface-variant italic">Fechado</span>
+</li>
+</ul>
+</div>
+<!-- Contact Details -->
+<div>
+<h3 class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant mb-6 border-b border-outline-variant pb-2">Informações de Contato</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="location_on">location_on</span>
+<p class="font-body-md text-body-md text-on-surface">Rua Exemplo de Luxo, 123<br/>Jardins, São Paulo - SP<br/>01234-567</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="call">call</span>
+<p class="font-body-md text-body-md text-on-surface">+55 11 99999-9999</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="mail">mail</span>
+<p class="font-body-md text-body-md text-on-surface">contato@nomesalao.com.br</p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="pt-4 space-y-4">
+<a class="flex items-center justify-center gap-2 w-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-6 py-4 rounded hover:bg-surface-variant transition-colors uppercase tracking-[0.1em]" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                    WhatsApp
+                </a>
+<div class="flex gap-4 justify-center pt-4">
+<a aria-label="Instagram" class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:border-on-surface hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+<a aria-label="Facebook" class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:border-on-surface hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="thumb_up">thumb_up</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Booking Form -->
+<div class="lg:col-span-8">
+<div class="bg-surface-container-lowest p-8 md:p-12 border border-surface-variant shadow-sm rounded-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Solicite um Agendamento</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Preencha o formulário abaixo e nossa equipe entrará em contato para confirmar seu horário.</p>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Nome -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2" for="name">Nome Completo</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:border-on-surface focus:ring-0 px-0 py-2 font-body-md text-on-surface placeholder:text-outline placeholder:font-label-sm" id="name" name="name" placeholder="Seu nome" type="text"/>
+</div>
+<!-- Telefone -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2" for="phone">Telefone / WhatsApp</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:border-on-surface focus:ring-0 px-0 py-2 font-body-md text-on-surface placeholder:text-outline placeholder:font-label-sm" id="phone" name="phone" placeholder="(00) 00000-0000" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Serviço -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2" for="service">Serviço Desejado</label>
+<select class="bg-transparent border-0 border-b border-outline-variant focus:border-on-surface focus:ring-0 px-0 py-2 font-body-md text-on-surface" id="service" name="service">
+<option disabled="" selected="" value="">Selecione um serviço</option>
+<option value="corte">Corte &amp; Styling</option>
+<option value="coloracao">Coloração</option>
+<option value="spa">Spa Capilar</option>
+<option value="maquiagem">Maquiagem Editorial</option>
+<option value="manicure">Manicure &amp; Pedicure</option>
+</select>
+</div>
+<!-- Data Preferencial -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2" for="date">Data Preferencial</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:border-on-surface focus:ring-0 px-0 py-2 font-body-md text-on-surface text-outline" id="date" name="date" type="date"/>
+</div>
+</div>
+<!-- Mensagem -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2" for="message">Mensagem (Opcional)</label>
+<textarea class="bg-transparent border-0 border-b border-outline-variant focus:border-on-surface focus:ring-0 px-0 py-2 font-body-md text-on-surface placeholder:text-outline placeholder:font-label-sm resize-none" id="message" name="message" placeholder="Detalhes adicionais sobre seu agendamento..." rows="3"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto bg-primary text-on-primary font-label-sm text-label-sm px-12 py-4 rounded hover:bg-surface-tint transition-colors uppercase tracking-[0.2em]" type="submit">
+                            Enviar Solicitação
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Map Section -->
+<section class="w-full h-96 relative bg-surface-container-high border-t border-b border-surface-variant">
+<div class="absolute inset-0 flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-4xl" data-icon="map">map</span>
+</div>
+<!-- Placeholder for actual Google Maps Embed -->
+<img alt="Mapa de localização" class="w-full h-full object-cover opacity-60 mix-blend-multiply" data-alt="A stylized, high-end editorial map visualization of a luxury shopping district in São Paulo. The map is rendered in a minimalist light-mode aesthetic, utilizing soft warm ivory and dusty rose tones to highlight key streets. The typography on the map is elegant and serif-based. The lighting is bright and diffuse, creating a serene, sophisticated mood suitable for a high-end spa location page." data-location="São Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzsoQMT4LPtpt5vqWrl3NuXzRoYHsa6O7-vphRu3dWfUuce2HzRtO_KEKtdVIgnLaY6nSQ182Yki5P9yPvDT9otyrThcGhpVh0Asa0q7P68HVQOuImRrJAbct3Q4o5PkQxQR_j1oMLKqNA1GL2FPS9AErst4bM67ciJMwbILxj19NVWGKIO1mt629RJt5MTRPtmPSQfUZbuLoqgxe91LNihP-bf21pK8XfwVT3lJTJsU--l5_ZvIAXinpcNLvVbpK3EsEQe6jWn0E"/>
+</section>
+<!-- Footer Component -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 border-t border-stone-100 dark:border-stone-900 bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-serif text-sm leading-relaxed tracking-wide">
+<div class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="text-xl font-serif italic text-stone-800 dark:text-stone-200 opacity-80 hover:opacity-100 transition-opacity">
+                © 2024 [NOME DO SALÃO]. Essência e Bem-estar.
+            </div>
+<div class="flex flex-wrap gap-8">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all opacity-80 hover:opacity-100" href="#">Privacidade</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all opacity-80 hover:opacity-100" href="#">Termos</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all opacity-80 hover:opacity-100" href="#">Trabalhe Conosco</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all opacity-80 hover:opacity-100" href="#">Localização</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Galeria - [NOME DO SALÃO]</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Serif:ital,wght@0,300;0,400;1,300&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#a47b65",
+                        "on-primary-fixed-variant": "#474747",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "outline": "#7e7576",
+                        "tertiary-fixed-dim": "#ecbda4",
+                        "on-background": "#1c1c1a",
+                        "on-surface-variant": "#4c4546",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1b1b1b",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#848484",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#603f2d",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2e1506",
+                        "on-surface": "#1c1c1a",
+                        "surface-tint": "#5e5e5e",
+                        "secondary-fixed": "#ffe088",
+                        "inverse-on-surface": "#f3f0ec",
+                        "surface-container": "#f0ede9",
+                        "on-secondary-fixed-variant": "#574500",
+                        "secondary-fixed-dim": "#e9c349",
+                        "surface-container-highest": "#e5e2de",
+                        "surface-container-high": "#eae8e4",
+                        "tertiary": "#000000",
+                        "on-secondary-container": "#745c00",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf9f5",
+                        "tertiary-fixed": "#ffdbca",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-container-low": "#f6f3ef",
+                        "on-secondary-fixed": "#241a00",
+                        "primary": "#000000",
+                        "surface-variant": "#e5e2de",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fed65b",
+                        "background": "#fcf9f5",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#31302e",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#fcf9f5",
+                        "outline-variant": "#cfc4c5",
+                        "surface-dim": "#dcdad6",
+                        "secondary": "#735c00",
+                        "tertiary-container": "#2e1506"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "container-max": "1280px",
+                        "section-padding": "120px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "stack-sm": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Noto Serif"],
+                        "label-sm": ["Manrope"],
+                        "headline-md": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+                        "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md text-stone-900 dark:text-stone-100 font-serif text-xs tracking-[0.2em] uppercase font-medium h-[72px] w-full sticky top-0 z-50 border-b border-stone-200/30 dark:border-stone-800/30 shadow-sm shadow-stone-200/10 dark:shadow-none">
+<div class="flex justify-between items-center max-w-screen-2xl mx-auto px-8 md:px-12 w-full h-full">
+<a class="text-2xl font-serif font-bold tracking-tighter text-stone-950 dark:text-stone-50" href="#">
+                [NOME DO SALÃO]
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out scale-95 duration-200 opacity-90" href="#">Home</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out scale-95 duration-200 opacity-90" href="#">Serviços</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out scale-95 duration-200 opacity-90" href="#">Sobre Nós</a>
+<a class="text-stone-950 dark:text-stone-50 border-b border-stone-950 dark:border-stone-50 pb-1 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out scale-95 duration-200 opacity-90" href="#">Galeria</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out scale-95 duration-200 opacity-90" href="#">Contato</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-3 font-label-sm text-label-sm hover:bg-tertiary-fixed-dim hover:text-on-tertiary-container transition-colors duration-300" href="#">
+                Agendar Agora
+            </a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Header Section -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-md">Galeria de Arte</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-16">
+                Explore nossa curadoria visual. Um olhar sobre os momentos de transformação, serenidade e beleza meticulosa que definem a experiência no nosso espaço.
+            </p>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap justify-center gap-6 mb-16 border-b border-outline-variant pb-4">
+<button class="font-label-sm text-label-sm text-primary border-b-2 border-primary pb-2 px-2 uppercase tracking-widest">Todos</button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors pb-2 px-2 uppercase tracking-widest">Cabelo</button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors pb-2 px-2 uppercase tracking-widest">Unhas</button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors pb-2 px-2 uppercase tracking-widest">Estética</button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors pb-2 px-2 uppercase tracking-widest">Noivas</button>
+</div>
+</section>
+<!-- Masonry Grid Section -->
+<section class="px-gutter pb-section-padding max-w-container-max mx-auto">
+<div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+<!-- Gallery Item 1 -->
+<div class="break-inside-avoid relative group cursor-pointer overflow-hidden rounded-sm bg-surface shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+<img alt="Gallery Image 1" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-fashion, editorial style photograph of a modern spa setting. Focus on a woman with flawless, glowing skin receiving a delicate facial treatment. Soft, diffused natural light pouring in from a large window, creating a serene, minimal light-mode aesthetic. Warm ivory and subtle dusty rose tones dominate the elegant composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDViilV1rYpFem-JvgtGV6_zrkT3YDORzTST3rs_xyMI2WvfOHJnCzAAmLF09Iffqja0wXL1QwZjGiPJWpPdqULfW8yTD-xE0QYeBS4TClECy4FxyZVpANGJQDqxOURASh5jQPr4oezD6ft967u3aFK1ZQJPpFkN2es-xofiyybeQLyRuLOyzwZODUGieaOa4klLCKpMmu6yHW_1ylzO8M-69H8flKQFVxgGCbxtmG0V-Ci6AIITQEiXadglbjlMqd0JECFb1ehTcM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest">Estética Facial</span>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="break-inside-avoid relative group cursor-pointer overflow-hidden rounded-sm bg-surface shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+<img alt="Gallery Image 2" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A meticulously styled editorial photograph highlighting an intricate, modern bridal updo hairstyle. The background is a clean, minimal ivory studio backdrop. Soft, directional lighting emphasizes the texture and shine of the hair. The overall mood is sophisticated, poised, and luxurious, fitting a high-end salon portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl44ejo8mHdplrEY7CDBqxKZFn4bRmOjr3dDpdbj2uPTVDcTBJ9jS962E_HfsXsrIkXsYa705Z-mwl3H5D5MqNPM1VgJ2UVJlZJ3AIA9pDNLc81wES8HwykUZLj_4UZbfuE1QKlVbKVLwV529NRWiclgxWsmZ0jviCZmih57UXPVgniOArMbXYZRYL-R1J9z577x2JGL0UZUbVV18G0vD7lcbAocWR0SDX2km0LwmzWBmyyotzkAeEHw1xD1jEFXeiVLdx_Ahf7Pc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest">Noivas</span>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="break-inside-avoid relative group cursor-pointer overflow-hidden rounded-sm bg-surface shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+<img alt="Gallery Image 3" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up, high-resolution shot of beautifully manicured hands resting on a smooth, pale stone surface. The nails feature a minimalist, elegant nude polish. The lighting is bright and airy, casting very soft ambient shadows. The color palette revolves around warm ivory, soft taupe, and subtle hints of dusty rose in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVshiUnnDbJHExB1lkUsZmuDasANCV8jL21bqOt1KfZKY65zUgBnKZCCpANB2bT-EXXBdK2rTezQCddXCsrO8dzZdaEtYqhYo1EbhauAgu97PQZd1-PcoxW24zdEmxXH3zX0F0Myq5PS1m9V89tUlmc99bwXaScD_fTvCn-mgiKfWWt7B4LXZyxniOCsXtWtaDZ6MCQOiZUvcw8C3AyC7AYDqScgH_8C6vHhU_W_DjXrjpiAVe2xDYoMnP8FiaSNdgMmnKWSgHBlY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest">Unhas</span>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="break-inside-avoid relative group cursor-pointer overflow-hidden rounded-sm bg-surface shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+<img alt="Gallery Image 4" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An editorial interior shot of a luxury spa treatment room. Focus on a pristine massage bed with crisp white linens, adorned with a delicate botanical sprig. The room is bathed in natural light, showcasing minimal, flowing shapes and organic softness. The aesthetic is serene, restorative, and highly refined." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfuDueX0hAzuqba0Qjb34mNobvtQWb6kbS6yQcZst2ZXv-gB4zD3cYqjpphqfZe3MpUMwzszfjeUgQzegKHrLRbr7M_9C0oTdzz_21fXfkmmOF6tM7k46UmStiPw8UdpKgXipemk7jN-9m1nbAfyTvIO4XxrLRLb0smSoalSI4tC5gUsCayuUBMNp_nZz52ma0EyGZiN0fGGvTKguIv3VvII4JPTq2tk1hlkpAp6m38QNc3cxCDCN4nzPNHjtqRcEGY7Ed5J9JeiI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest">Ambiente</span>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="break-inside-avoid relative group cursor-pointer overflow-hidden rounded-sm bg-surface shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+<img alt="Gallery Image 5" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A dynamic yet graceful photograph of a stylist's hands mid-motion while blow-drying a client's hair. The hair looks vibrant, healthy, and perfectly styled. The background is slightly blurred (bokeh) emphasizing the action. The lighting is studio-quality, highlighting the sheen of the hair against a minimal, warm-toned salon environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6cqRVkZMW_N71zPptx0qBoI8TLI7HJwCKWl9Mr6IXPJjFJwShwErERHDx8XEErPQkyrgiNcXSYn3cNWFaYLpg1M2YMQP51t1aYYzz6XUqHccfByoj-UGJIhJF_DEusI5z3RX468eVS41m1x4f2NR2LA8vdxq5dZBlzhNVEN4X7xU5zWGtMweGD_OldEPMAAzVnLYx9pvFldWXCoYO4Wz5I2-V1X3LiqsG03omNe19WJssXAcqtzMa6zkCQmewz9vtqNylgbLyQqY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest">Cabelo</span>
+</div>
+</div>
+<!-- Gallery Item 6 -->
+<div class="break-inside-avoid relative group cursor-pointer overflow-hidden rounded-sm bg-surface shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+<img alt="Gallery Image 6" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully composed flat lay of premium skincare and spa products arranged asymmetrically on a sleek, textured ivory surface. Subtle shadows add depth, creating a layered paper effect. A single, delicate dusty rose botanical element softens the composition. The style is minimalist, editorial, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFlTM_P1UDrPlJZrfoYr9YkprfZTjUJTFfchnl6zKAdtXI3FI1yIDqEhQsOJ_kgkycNK32WN932cC3Hs06cOZOQaaBVGxsYEvpiAg4ShTZbaOTQU__DLUCwMl31UozMXEjlW6ER1Q7sOZLZI4uy4vMIA-U2O5S9z7N4i7-ymREVQwP7v6y-UAfkwJoqu8mutk9Xj8K-Ws-H9sDT1sddkbbTZf4DNMGFL-Jy4azrpvEjKi6HA4gq3-YOYUFWPZwyI4lqiMDXhg97_o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest">Produtos</span>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="mt-16 text-center">
+<button class="border border-outline text-primary px-8 py-3 font-label-sm text-label-sm hover:bg-surface-variant transition-colors duration-300 uppercase tracking-widest bg-transparent">
+                    Carregar Mais
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-serif text-sm leading-relaxed tracking-wide w-full border-t border-stone-200 dark:border-stone-800">
+<div class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="text-xl font-serif italic text-stone-800 dark:text-stone-200">
+                © 2024 [NOME DO SALÃO]. Essência e Bem-estar.
+            </div>
+<div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+<a class="text-stone-500 dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all" href="#">Privacidade</a>
+<a class="text-stone-500 dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all" href="#">Termos</a>
+<a class="text-stone-500 dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all" href="#">Trabalhe Conosco</a>
+<a class="text-stone-500 dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all" href="#">Localização</a>
+</div>
+</div>
+</footer>
+</body></html>

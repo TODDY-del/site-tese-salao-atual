@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Serviços - [NOME DO SALÃO]</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#a47b65",
+                    "on-primary-fixed-variant": "#474747",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "outline": "#7e7576",
+                    "tertiary-fixed-dim": "#ecbda4",
+                    "on-background": "#1c1c1a",
+                    "on-surface-variant": "#4c4546",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#1b1b1b",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#848484",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#603f2d",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#2e1506",
+                    "on-surface": "#1c1c1a",
+                    "surface-tint": "#5e5e5e",
+                    "secondary-fixed": "#ffe088",
+                    "inverse-on-surface": "#f3f0ec",
+                    "surface-container": "#f0ede9",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-fixed-dim": "#e9c349",
+                    "surface-container-highest": "#e5e2de",
+                    "surface-container-high": "#eae8e4",
+                    "tertiary": "#000000",
+                    "on-secondary-container": "#745c00",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fcf9f5",
+                    "tertiary-fixed": "#ffdbca",
+                    "inverse-primary": "#c6c6c6",
+                    "surface-container-low": "#f6f3ef",
+                    "on-secondary-fixed": "#241a00",
+                    "primary": "#000000",
+                    "surface-variant": "#e5e2de",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed65b",
+                    "background": "#fcf9f5",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#31302e",
+                    "on-primary-fixed": "#1b1b1b",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fcf9f5",
+                    "outline-variant": "#cfc4c5",
+                    "surface-dim": "#dcdad6",
+                    "secondary": "#735c00",
+                    "tertiary-container": "#2e1506"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "32px",
+                    "container-max": "1280px",
+                    "section-padding": "120px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "stack-sm": "16px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Noto Serif"
+                    ],
+                    "label-sm": [
+                            "Manrope"
+                    ],
+                    "headline-md": [
+                            "Noto Serif"
+                    ],
+                    "headline-lg": [
+                            "Noto Serif"
+                    ],
+                    "body-lg": [
+                            "Manrope"
+                    ],
+                    "body-md": [
+                            "Manrope"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "300"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+        },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="h-[72px] w-full sticky top-0 z-50 border-b border-stone-200/30 dark:border-stone-800/30 bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md shadow-sm shadow-stone-200/10 dark:shadow-none">
+<div class="flex justify-between items-center max-w-screen-2xl mx-auto px-8 md:px-12 w-full h-full">
+<a class="text-2xl font-serif font-bold tracking-tighter text-stone-950 dark:text-stone-50" href="#">
+                [NOME DO SALÃO]
+            </a>
+<div class="hidden md:flex gap-8 items-center font-serif text-xs tracking-[0.2em] uppercase font-medium">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Home</a>
+<a class="text-stone-950 dark:text-stone-50 border-b border-stone-950 dark:border-stone-50 pb-1" href="#">Serviços</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Sobre Nós</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Galeria</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white transition-all duration-500 ease-in-out" href="#">Contato</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-none font-label-sm text-label-sm hover:bg-secondary hover:text-on-secondary transition-colors duration-300 scale-95 duration-200 opacity-90">
+                Agendar Agora
+            </button>
+</div>
+</nav>
+<!-- Header Section -->
+<header class="py-section-padding px-gutter max-w-container-max mx-auto text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-sm">Nossos Serviços</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Descubra uma experiência de cuidado e bem-estar projetada para realçar sua beleza natural. Nossos especialistas combinam técnicas refinadas com produtos premium em um ambiente sereno.
+        </p>
+</header>
+<!-- Services Grid -->
+<main class="pb-section-padding px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md lg:gap-16">
+<!-- Hair Service Card -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden mb-stack-sm aspect-[4/5] bg-surface-variant">
+<img alt="Hair styling" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A sophisticated beauty editorial shot of a woman with perfectly styled, voluminous hair falling gently over her shoulders. The lighting is soft and high-key, creating a serene, modern spa atmosphere. The color palette features warm ivory tones and dusty rose accents, reflecting an elegant, luxury salon environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAAhzYqnVtdY321FsBUUDuSs719dqfRDeh0Hbwq-1nc223ZZplcz9Aso5lGf-emHo-_eDxkkMuJaP414RkQDcaFC_A_GTBnCEYqe0fZj8sy-sYsl5eiIz5RRX_aEfusAnTsKTrdxLmnShImKS9n8Ql3npVBIHHxZ-wCcz9mlCtqtJKGYajZN6KdTz3JM_H7NIQvej6M8_3n44hKtU2HR6iJKBDvDv4RNJgm0tpvnWx0jVvdhahk0ia_I0rQMoq8_5xwAuCqxbaNSg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" data-icon="content_cut">content_cut</span>
+<h2 class="font-headline-md text-headline-md text-primary">Cabelo</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">A partir de R$ 150</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                    Cortes precisos, colorações artísticas e tratamentos reconstrutores que devolvem a vitalidade aos seus fios, utilizando as marcas mais conceituadas do mercado.
+                </p>
+<button class="font-label-sm text-label-sm text-primary uppercase tracking-widest border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors">
+                    Saiba mais
+                </button>
+</article>
+<!-- Nails Service Card -->
+<article class="group cursor-pointer pt-0 md:pt-24">
+<div class="relative overflow-hidden mb-stack-sm aspect-[4/5] bg-surface-variant">
+<img alt="Nail care" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A minimalist and elegant close-up of beautifully manicured hands resting on a clean, warm ivory surface. Delicate botanical shadows fall gently across the frame. The lighting is soft and natural, emphasizing a serene, high-end spa aesthetic with subtle dusty rose undertones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-U-ud7rXFrllBxmKB1D0sVZSsE2pfNhucFdzjHRDUhTDcjpLZ1Xnzq5nfo6PqAvHxVwNf5kNefkmggmzdySH1dXAmSh0ClQaHEcX0KsnJrd19BVkH5CFepswffrZyIO_D6wkbkGIupCl-WPZf8B_imNWxMr_I_pDEdswo-0E3R2I8YIgcTP4q6sXMlp0f7Xkt3Jycrrov0EBc8_sZ-3hAoo-n61VSpCcHbeI8XNLN-G8R4SJFXL6oTqYOd2Qsb9vmCHKXgNmdhsg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" data-icon="back_hand">back_hand</span>
+<h2 class="font-headline-md text-headline-md text-primary">Unhas</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">A partir de R$ 80</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                    Manicure e pedicure de luxo com esmaltação impecável, alongamentos sofisticados e cuidados profundos para mãos e pés em um ritual relaxante.
+                </p>
+<button class="font-label-sm text-label-sm text-primary uppercase tracking-widest border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors">
+                    Saiba mais
+                </button>
+</article>
+<!-- Skin Service Card -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden mb-stack-sm aspect-[4/5] bg-surface-variant">
+<img alt="Skin care" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A tranquil profile shot of a woman receiving a facial treatment. Her skin glows softly under high-key, diffused lighting. The setting feels like an exclusive, minimalist wellness retreat, featuring airy whitespace and gentle organic softness in the surrounding environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABgg0_RIqGaI3zidv2B_SJHqSVeAdCpOPsppGpg8ywM0YST6z4RYQmIwiNqtWlqojO5Wag1ssvW63aVFDGaRFScCKdTFphyIc4oWpMncy7VXYoqenczhowXcMjB5C0cUsj7DB5ODeC5e3oisG_1smC2RQflvYb_vTZk83gCK949r7q-AgtfxdVLoPmlr-oWFrMpoGKUTjG3XecjiCd9qq-o96D_iWlALXtb5zApG5rvNklTXs6_33lyTYP3u8PNYTkPaFIBv7oKiM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" data-icon="spa">spa</span>
+<h2 class="font-headline-md text-headline-md text-primary">Pele</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">A partir de R$ 250</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                    Protocolos faciais e corporais personalizados. De limpezas profundas a terapias antissinais avançadas, focamos na saúde e radiância natural da sua pele.
+                </p>
+<button class="font-label-sm text-label-sm text-primary uppercase tracking-widest border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors">
+                    Saiba mais
+                </button>
+</article>
+<!-- Makeup Service Card -->
+<article class="group cursor-pointer pt-0 md:pt-24">
+<div class="relative overflow-hidden mb-stack-sm aspect-[4/5] bg-surface-variant">
+<img alt="Makeup artistry" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="An editorial style portrait focusing on flawless, elegant makeup. The subject has soft, natural tones with a refined finish. The composition is asymmetrical, surrounded by generous negative space in a warm ivory hue, exuding a poised and sophisticated luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyENy9TGamMpInF6eZmhHR4kebrvmt0c8cyjLe6Hr-MFm5Pp4_N75upaeWnuY1nQNyRyLvpOXWHcVF-97US5t87i8LuJnZajbPwMg7iJzuS1SjMFbv6ywY6yE36gCS0U9wxnexmxwpjRuCrGT8TD3HkCpzuCo_TZsNHeAlCKs3Khiksi1p8gR19HHnYP3g4Cfnc-zfYNGt_IhsW7WgGVAB27h0H5DkBbT__S_w1gBRSvFdi5iEZJq2bH8sLzRErmSg4YSlcBh7Fy4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" data-icon="brush">brush</span>
+<h2 class="font-headline-md text-headline-md text-primary">Maquiagem</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">A partir de R$ 200</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                    Produções exclusivas para eventos, noivas e editoriais. Realçamos seus traços com produtos de alta performance e técnicas de visagismo precisas.
+                </p>
+<button class="font-label-sm text-label-sm text-primary uppercase tracking-widest border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors">
+                    Saiba mais
+                </button>
+</article>
+</div>
+</main>
+<!-- Bottom CTA Section -->
+<section class="py-section-padding px-gutter bg-surface-container-low text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Pronta para agendar?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-8">
+            Permita-nos cuidar de você. Agende seu horário e experimente nossa abordagem exclusiva de beleza e bem-estar.
+        </p>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-none font-label-sm text-label-sm tracking-widest uppercase hover:bg-secondary hover:text-on-secondary transition-colors duration-300">
+            Agendar Agora
+        </button>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 border-t border-stone-100 dark:border-stone-900 bg-stone-50 dark:bg-stone-950">
+<div class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row justify-between items-start gap-12 font-serif text-sm leading-relaxed tracking-wide text-stone-900 dark:text-stone-100">
+<div>
+<p class="text-xl font-serif italic text-stone-800 dark:text-stone-200 mb-4 opacity-80 hover:opacity-100 transition-opacity">
+                    [NOME DO SALÃO]
+                </p>
+<p class="text-stone-500 dark:text-stone-400">© 2024 [NOME DO SALÃO]. Essência e Bem-estar.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-6 md:gap-12">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all" href="#">Privacidade</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all" href="#">Termos</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all" href="#">Trabalhe Conosco</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline underline-offset-8 decoration-stone-300 transition-all" href="#">Localização</a>
+</div>
+</div>
+</footer>
+</body></html>

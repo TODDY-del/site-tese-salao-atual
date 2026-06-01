@@ -61,6 +61,15 @@
     #mobile-menu.open { display: flex; flex-direction: column; }
     .gallery-item { display: block; }
     .gallery-item[data-category]:not([data-active]) { display: none; }
+  footer { background-color: #000 !important; }
+  footer { border-color: #292524 !important; }
+  footer h3 { color: #f5f5f4 !important; border-color: #44403c !important; }
+  footer p, footer li, footer address { color: #78716c !important; }
+  footer a { color: #78716c !important; }
+  footer a:hover { color: #e7e5e4 !important; }
+  footer .material-symbols-outlined { color: #57534e !important; }
+  footer .border-outline-variant { border-color: #44403c !important; }
+  footer .border-stone-200 { border-color: #44403c !important; }
   </style>
 
   <script type="application/ld+json">
@@ -80,7 +89,7 @@
 <nav class="w-full sticky top-0 z-50 border-b border-stone-200/50 bg-stone-50/90 backdrop-blur-md shadow-sm">
   <div class="flex justify-between items-center max-w-screen-xl mx-auto px-6 md:px-10 w-full h-[72px]">
     <a href="index.html" aria-label="Salão Estilo Atual — Página Inicial">
-      <img src="./logo estilo atual.jpg" alt="Salão Estilo Atual" height="48" width="120" class="h-12 w-auto object-contain" />
+      <img src="./logo estilo atual.svg" alt="Salão Estilo Atual" height="48" width="120" class="h-12 w-auto object-contain" />
     </a>
     <div class="hidden md:flex items-center gap-8 font-serif text-xs tracking-[0.2em] uppercase font-medium">
       <a href="index.html" class="text-stone-500 hover:text-stone-950 transition-colors duration-300">Home</a>
@@ -232,12 +241,12 @@
   </section>
 
   <!-- CTA -->
-  <section class="py-section-padding px-gutter bg-primary text-on-primary text-center">
-    <h2 class="font-headline-lg text-headline-lg text-on-primary mb-4">Quer fazer parte da galeria?</h2>
-    <p class="font-body-lg text-body-lg text-stone-300 max-w-xl mx-auto mb-stack-md">
+  <section class="py-section-padding px-gutter bg-surface-container text-center">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Quer fazer parte da galeria?</h2>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-stack-md">
       Agende seu horário e venha viver a experiência do Salão Estilo Atual em Igarapava.
     </p>
-    <a href="https://wa.me/5516991638816" class="inline-flex items-center gap-2 bg-on-primary text-primary font-label-sm text-label-sm px-10 py-4 hover:bg-secondary-fixed transition-colors duration-300 uppercase tracking-widest">
+    <a href="https://wa.me/5516991638816" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-sm text-label-sm px-10 py-4 hover:bg-stone-800 transition-colors duration-300 uppercase tracking-widest">
       <span class="material-symbols-outlined text-lg">chat</span>
       Agendar no WhatsApp
     </a>
@@ -249,7 +258,7 @@
 <footer class="bg-stone-50 border-t border-stone-200">
   <div class="max-w-screen-xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
     <div>
-      <img src="./logo estilo atual.jpg" alt="Salão Estilo Atual" height="56" width="140" class="h-14 w-auto object-contain mb-5" />
+      <img src="./logo estilo atual.svg" alt="Salão Estilo Atual" height="56" width="140" class="h-14 w-auto object-contain mb-5 invert" />
       <p class="font-body-md text-on-surface-variant text-sm leading-relaxed mb-5">Beleza e bem-estar no coração de Igarapava. Mais de 10 anos cuidando da autoestima das nossas clientes.</p>
       <a href="https://www.instagram.com/salaoestiloatualigarapava" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
         class="inline-flex w-10 h-10 border border-outline-variant items-center justify-center text-on-surface-variant hover:border-on-surface hover:text-on-surface transition-colors">

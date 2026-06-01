@@ -61,6 +61,15 @@
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
     #mobile-menu { display: none; }
     #mobile-menu.open { display: flex; flex-direction: column; }
+  footer { background-color: #000 !important; }
+  footer { border-color: #292524 !important; }
+  footer h3 { color: #f5f5f4 !important; border-color: #44403c !important; }
+  footer p, footer li, footer address { color: #78716c !important; }
+  footer a { color: #78716c !important; }
+  footer a:hover { color: #e7e5e4 !important; }
+  footer .material-symbols-outlined { color: #57534e !important; }
+  footer .border-outline-variant { border-color: #44403c !important; }
+  footer .border-stone-200 { border-color: #44403c !important; }
   </style>
 
   <script type="application/ld+json">
@@ -80,7 +89,7 @@
 <nav class="w-full sticky top-0 z-50 border-b border-stone-200/50 bg-stone-50/90 backdrop-blur-md shadow-sm">
   <div class="flex justify-between items-center max-w-screen-xl mx-auto px-6 md:px-10 w-full h-[72px]">
     <a href="index.html" aria-label="Salão Estilo Atual — Página Inicial">
-      <img src="./logo estilo atual.jpg" alt="Salão Estilo Atual" height="48" width="120" class="h-12 w-auto object-contain" />
+      <img src="./logo estilo atual.svg" alt="Salão Estilo Atual" height="48" width="120" class="h-12 w-auto object-contain" />
     </a>
     <div class="hidden md:flex items-center gap-8 font-serif text-xs tracking-[0.2em] uppercase font-medium">
       <a href="index.html" class="text-stone-500 hover:text-stone-950 transition-colors duration-300">Home</a>
@@ -172,6 +181,24 @@
     </div>
   </section>
 
+  <!-- ========== GALERIA DO SALÃO ========== -->
+  <section class="py-section-padding px-gutter" aria-labelledby="galeria-salao-heading">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-12">
+        <span class="font-label-sm text-label-sm text-on-tertiary-container block mb-4 uppercase tracking-widest">Nosso Espaço</span>
+        <h2 id="galeria-salao-heading" class="font-headline-md text-headline-md text-primary">Conheça o Salão</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div class="aspect-[4/5] overflow-hidden"><img src="./fotos salao/fotosalao1.webp" alt="Salão Estilo Atual" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
+        <div class="aspect-[4/5] overflow-hidden"><img src="./fotos salao/fotosalao2.webp" alt="Salão Estilo Atual" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
+        <div class="aspect-[4/5] overflow-hidden"><img src="./fotos salao/fotosalao3.webp" alt="Salão Estilo Atual" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
+        <div class="aspect-[4/5] overflow-hidden"><img src="./fotos salao/fotosalao4.webp" alt="Salão Estilo Atual" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
+        <div class="aspect-[4/5] overflow-hidden"><img src="./fotos salao/fotosalao5.webp" alt="Salão Estilo Atual" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
+        <div class="aspect-[4/5] overflow-hidden"><img src="./fotos salao/fotosalao6.webp" alt="Salão Estilo Atual" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
   <!-- TEAM -->
   <section class="py-section-padding px-gutter bg-surface-container-low" aria-labelledby="equipe-heading">
     <div class="max-w-container-max mx-auto">
@@ -201,12 +228,12 @@
   </section>
 
   <!-- CTA -->
-  <section class="py-section-padding px-gutter bg-primary text-on-primary text-center">
-    <h2 class="font-headline-lg text-headline-lg text-on-primary mb-5">Venha nos conhecer</h2>
-    <p class="font-body-lg text-body-lg text-stone-300 max-w-xl mx-auto mb-stack-md">
+  <section class="py-section-padding px-gutter bg-surface-container text-center">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-5">Venha nos conhecer</h2>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-stack-md">
       Estamos no Centro de Igarapava, prontas para cuidar de você de terça a sábado.
     </p>
-    <a href="https://wa.me/5516991638816" class="inline-flex items-center gap-2 bg-on-primary text-primary font-label-sm text-label-sm px-10 py-4 hover:bg-secondary-fixed transition-colors duration-300 uppercase tracking-widest">
+    <a href="https://wa.me/5516991638816" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-sm text-label-sm px-10 py-4 hover:bg-stone-800 transition-colors duration-300 uppercase tracking-widest">
       <span class="material-symbols-outlined text-lg">chat</span>
       Agendar no WhatsApp
     </a>
@@ -218,7 +245,7 @@
 <footer class="bg-stone-50 border-t border-stone-200">
   <div class="max-w-screen-xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
     <div>
-      <img src="./logo estilo atual.jpg" alt="Salão Estilo Atual" height="56" width="140" class="h-14 w-auto object-contain mb-5" />
+      <img src="./logo estilo atual.svg" alt="Salão Estilo Atual" height="56" width="140" class="h-14 w-auto object-contain mb-5 invert" />
       <p class="font-body-md text-on-surface-variant text-sm leading-relaxed mb-5">Beleza e bem-estar no coração de Igarapava. Mais de 10 anos cuidando da autoestima das nossas clientes.</p>
       <a href="https://www.instagram.com/salaoestiloatualigarapava" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
         class="inline-flex w-10 h-10 border border-outline-variant items-center justify-center text-on-surface-variant hover:border-on-surface hover:text-on-surface transition-colors">

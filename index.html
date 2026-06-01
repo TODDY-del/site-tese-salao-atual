@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://lh3.googleusercontent.com" />
 
   <!-- Hero image preload para melhor LCP -->
-  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/aida-public/AB6AXuDB9KjLGRymMCVRNlCuFm-aBM-Kal7SHCkimplgnbM5Cyu3N2yyvRWBXg2iZNiiWurGKtB8KUEGM4TxVpiN6sMs0BccUyjGgeasgFkeoCijZdJM1mFeBJOwN30ctSdjTvHjVHPtsLxQJrj9lDxJsqvtFrWTuj4XW6FvKTw3Vh0df6pG1RFaFDLtR8a296NvcpcwavzH0B8VdQwTbhtFoNQkG4bdbVEah7Jsi3qiv7bGDrujOB5fyKyVzperD0mrojjACj4vccvrq-U" />
+  <link rel="preload" as="image" href="./fotos salao/fotosalao1.webp" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet" />
@@ -103,6 +103,15 @@
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
     #mobile-menu { display: none; }
     #mobile-menu.open { display: flex; flex-direction: column; }
+  footer { background-color: #000 !important; }
+  footer { border-color: #292524 !important; }
+  footer h3 { color: #f5f5f4 !important; border-color: #44403c !important; }
+  footer p, footer li, footer address { color: #78716c !important; }
+  footer a { color: #78716c !important; }
+  footer a:hover { color: #e7e5e4 !important; }
+  footer .material-symbols-outlined { color: #57534e !important; }
+  footer .border-outline-variant { border-color: #44403c !important; }
+  footer .border-stone-200 { border-color: #44403c !important; }
   </style>
 
   <!-- JSON-LD: LocalBusiness (BeautySalon) -->
@@ -156,7 +165,7 @@
   <div class="flex justify-between items-center max-w-screen-xl mx-auto px-6 md:px-10 w-full h-[72px]">
 
     <a href="index.html" aria-label="Salão Estilo Atual — Página Inicial">
-      <img src="./logo estilo atual.jpg" alt="Salão Estilo Atual" height="48" width="120" class="h-12 w-auto object-contain" />
+      <img src="./logo estilo atual.svg" alt="Salão Estilo Atual" height="48" width="120" class="h-12 w-auto object-contain" />
     </a>
 
     <div class="hidden md:flex items-center gap-8 font-serif text-xs tracking-[0.2em] uppercase font-medium">
@@ -193,30 +202,30 @@
 <main>
 
   <!-- ========== HERO ========== -->
-  <header class="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+  <header class="relative w-full min-h-[75vh] flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB9KjLGRymMCVRNlCuFm-aBM-Kal7SHCkimplgnbM5Cyu3N2yyvRWBXg2iZNiiWurGKtB8KUEGM4TxVpiN6sMs0BccUyjGgeasgFkeoCijZdJM1mFeBJOwN30ctSdjTvHjVHPtsLxQJrj9lDxJsqvtFrWTuj4XW6FvKTw3Vh0df6pG1RFaFDLtR8a296NvcpcwavzH0B8VdQwTbhtFoNQkG4bdbVEah7Jsi3qiv7bGDrujOB5fyKyVzperD0mrojjACj4vccvrq-U"
+        src="./fotos salao/fotosalao1.webp"
         alt="Ambiente do Salão Estilo Atual no Centro de Igarapava-SP"
         class="w-full h-full object-cover"
         width="1920" height="1080"
       />
-      <div class="absolute inset-0 bg-[#fcf9f5]/45"></div>
+      <div class="absolute inset-0 bg-black/60"></div>
     </div>
 
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
-      <span class="font-label-sm text-label-sm text-on-tertiary-container block mb-6 uppercase tracking-widest">Centro, Igarapava — SP</span>
-      <h1 class="font-display-lg text-display-lg text-primary mb-stack-sm">
+      <span class="font-label-sm text-label-sm text-white/70 block mb-6 uppercase tracking-widest">Centro, Igarapava — SP</span>
+      <h1 class="font-display-lg text-display-lg text-white mb-stack-sm">
         Salão de Beleza<br /><span class="italic font-light">Estilo Atual</span>
       </h1>
-      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-md">
+      <p class="font-body-lg text-body-lg text-white/80 max-w-2xl mb-stack-md font-bold">
         Cortes, colorações, tratamentos capilares, alisamentos e pacotes para noivas em Igarapava. Sua beleza em mãos especializadas.
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="https://wa.me/5516991638816" class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 hover:bg-stone-800 transition-colors duration-300 uppercase tracking-widest">
+        <a href="https://wa.me/5516991638816" class="bg-white text-primary font-label-sm text-label-sm px-8 py-4 hover:bg-stone-200 transition-colors duration-300 uppercase tracking-widest">
           Agendar no WhatsApp
         </a>
-        <a href="servicos.html" class="border border-primary text-primary font-label-sm text-label-sm px-8 py-4 hover:bg-primary hover:text-on-primary transition-colors duration-300 uppercase tracking-widest">
+        <a href="servicos.html" class="border border-white text-white font-label-sm text-label-sm px-8 py-4 hover:bg-white hover:text-primary transition-colors duration-300 uppercase tracking-widest">
           Ver Serviços
         </a>
       </div>
@@ -242,6 +251,25 @@
         <p class="font-serif text-[42px] leading-none font-light text-primary">100%</p>
         <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-2">Dedicação</p>
       </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE O SALÃO ========== -->
+  <section class="py-section-padding px-gutter" aria-labelledby="sobre-home-heading">
+    <div class="max-w-3xl mx-auto text-center">
+      <span class="font-label-sm text-label-sm text-on-tertiary-container block mb-4 uppercase tracking-widest">Quem somos</span>
+      <h2 id="sobre-home-heading" class="font-headline-md text-headline-md text-primary mb-6">
+        Um salão pensado para você
+      </h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mb-4">
+        O Salão Estilo Atual nasceu do desejo de oferecer beleza com cuidado e atenção real. Localizado no Centro de Igarapava-SP, atendemos cada cliente com escuta, técnica e produtos de qualidade.
+      </p>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+        Nossa equipe de profissionais está sempre em atualização — para que você saia do salão exatamente como imaginou.
+      </p>
+      <a href="sobre.html" class="font-label-sm text-label-sm uppercase tracking-widest border-b border-primary text-primary pb-1 hover:opacity-60 transition-opacity duration-300">
+        Conheça nossa história
+      </a>
     </div>
   </section>
 
@@ -370,7 +398,7 @@
           <img alt="Ambiente sereno e elegante do Salão Estilo Atual no Centro de Igarapava-SP"
             class="w-full h-full object-cover"
             loading="lazy" width="480" height="640"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWlkRjPT4-RP6nFY-ICAvHUpjYKTfMmJu3pWCv0QLdfq1pEMycCbbB2pxbdzFoiE4pBw3gqlj96qrEiyoFjKshguLhae4PFgKxEXH4m-pPH1D-Lnp5F5ziWB9IS8ZXpSGzJrW2l1AoirxZ1HIiWSQ8vGIdicYvwxHOak0vdrQmBUcU6xv5lO-TKio6E1HvKFJ1tSAvU7PFcrGj1Mhk4CsfJb4BPPROUIZKTXXfEm87J3D5bBFilTczEEQGaXE1OxDXeyuOqz0S-sw" />
+            src="./fotos salao/fotosalao3.webp" />
         </div>
       </div>
       <div class="pl-0 md:pl-12">
@@ -515,22 +543,75 @@
     </div>
   </section>
 
+  <!-- ========== FAQ ========== -->
+  <section class="py-section-padding px-gutter" aria-labelledby="faq-heading">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="font-label-sm text-label-sm text-on-tertiary-container block mb-4 uppercase tracking-widest">Dúvidas Frequentes</span>
+        <h2 id="faq-heading" class="font-headline-md text-headline-md text-primary">Perguntas & Respostas</h2>
+      </div>
+      <div class="divide-y divide-outline-variant">
+
+        <details class="group py-5">
+          <summary class="flex justify-between items-center cursor-pointer font-body-lg text-body-lg text-primary font-semibold list-none">
+            Como faço para agendar um horário?
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+          </summary>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-3">Você pode agendar diretamente pelo nosso WhatsApp clicando no botão de agendamento. Respondemos rapidamente e confirmamos o horário em instantes.</p>
+        </details>
+
+        <details class="group py-5">
+          <summary class="flex justify-between items-center cursor-pointer font-body-lg text-body-lg text-primary font-semibold list-none">
+            Vocês atendem para eventos e noivas?
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+          </summary>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-3">Sim! Temos pacotes especiais para noivas e eventos. Entre em contato com antecedência para garantir sua data e receber uma proposta personalizada.</p>
+        </details>
+
+        <details class="group py-5">
+          <summary class="flex justify-between items-center cursor-pointer font-body-lg text-body-lg text-primary font-semibold list-none">
+            Quais formas de pagamento são aceitas?
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+          </summary>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-3">Aceitamos dinheiro, Pix e cartões de débito e crédito. Consulte condições de parcelamento diretamente no salão.</p>
+        </details>
+
+        <details class="group py-5">
+          <summary class="flex justify-between items-center cursor-pointer font-body-lg text-body-lg text-primary font-semibold list-none">
+            Vocês trabalham com hora marcada ou ordem de chegada?
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+          </summary>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-3">Trabalhamos preferencialmente com hora marcada para garantir o melhor atendimento. Mas também atendemos por ordem de chegada quando há disponibilidade.</p>
+        </details>
+
+        <details class="group py-5">
+          <summary class="flex justify-between items-center cursor-pointer font-body-lg text-body-lg text-primary font-semibold list-none">
+            Onde o salão está localizado?
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+          </summary>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-3">Estamos localizados no Centro de Igarapava-SP. Acesse nossa página de contato para ver o endereço completo e como chegar.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ========== CTA CONTACT BANNER ========== -->
-  <section class="py-section-padding px-gutter bg-primary text-on-primary" aria-labelledby="cta-heading">
+  <section class="py-section-padding px-gutter bg-surface-container" aria-labelledby="cta-heading">
     <div class="max-w-container-max mx-auto text-center">
-      <span class="font-label-sm text-label-sm text-stone-400 block mb-4 uppercase tracking-widest">Agende sua visita</span>
-      <h2 id="cta-heading" class="font-headline-lg text-headline-lg text-on-primary mb-4">
+      <span class="font-label-sm text-label-sm text-on-tertiary-container block mb-4 uppercase tracking-widest">Agende sua visita</span>
+      <h2 id="cta-heading" class="font-headline-lg text-headline-lg text-primary mb-4">
         Pronta para se renovar?
       </h2>
-      <p class="font-body-lg text-body-lg text-stone-300 max-w-2xl mx-auto mb-stack-md">
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-stack-md">
         Entre em contato pelo WhatsApp ou ligue agora. Atendemos de terça a sábado no coração de Igarapava.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://wa.me/5516991638816" class="bg-on-primary text-primary font-label-sm text-label-sm px-8 py-4 hover:bg-secondary-fixed transition-colors duration-300 uppercase tracking-widest flex items-center justify-center gap-2">
+        <a href="https://wa.me/5516991638816" class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 hover:bg-stone-800 transition-colors duration-300 uppercase tracking-widest flex items-center justify-center gap-2">
           <span class="material-symbols-outlined text-lg">chat</span>
           Agendar no WhatsApp
         </a>
-        <a href="tel:+551631724747" class="border border-stone-600 text-on-primary font-label-sm text-label-sm px-8 py-4 hover:border-stone-300 transition-colors duration-300 uppercase tracking-widest flex items-center justify-center gap-2">
+        <a href="tel:+551631724747" class="border border-primary text-primary font-label-sm text-label-sm px-8 py-4 hover:bg-primary hover:text-on-primary transition-colors duration-300 uppercase tracking-widest flex items-center justify-center gap-2">
           <span class="material-symbols-outlined text-lg">call</span>
           (16) 3172-4747
         </a>
@@ -545,7 +626,7 @@
   <div class="max-w-screen-xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
 
     <div>
-      <img src="./logo estilo atual.jpg" alt="Salão Estilo Atual" height="56" width="140" class="h-14 w-auto object-contain mb-5" />
+      <img src="./logo estilo atual.svg" alt="Salão Estilo Atual" height="56" width="140" class="h-14 w-auto object-contain mb-5 invert" />
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed text-sm mb-5">
         Beleza, cuidado e bem-estar no coração de Igarapava. Há mais de 10 anos transformando a autoestima de nossas clientes.
       </p>
